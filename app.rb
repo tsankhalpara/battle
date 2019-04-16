@@ -1,5 +1,7 @@
-require 'sinatra'
+require 'sinatra/base'
 
-get '/Battle' do
-  
+class Battle < Sinatra::Base
+  get '/Battle' do
+    "Hello Battle!"
+  end
 end
