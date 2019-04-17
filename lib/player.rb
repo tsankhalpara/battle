@@ -16,5 +16,4 @@ class Player
   def deduct_points
     @points -= 10
   end
-  
 end

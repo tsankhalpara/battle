@@ -10,14 +10,7 @@ describe Player do
       expect(tara.name).to eq 'Tara'
     end
   end
-
-  describe '#attack' do
-    it 'causes damage to the player' do
-      expect(nandini).to receive(:deduct_points)
-      tara.attack(nandini)
-    end
-  end
-
+  
   describe '#deduct_points' do
     it 'reduces players points' do
       expect{tara.deduct_points}.to change{tara.points}.by(-10)
